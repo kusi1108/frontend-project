@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Page heading styling */
+h1 {
+  color: #0073e6;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Styling for the search input */
+#search-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #28a745;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container styling for overflow and spacing */
+.table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #e3f2fd;
+}
+
+table thead {
+  background-color: #1976d2;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #bbdefb;
+}
+
+/* Hover effect for table rows */
+table tbody tr:hover {
+  background-color: #bbdefb;
+}
+
+/* Styling for the featured flag */
+.featured {
+  background-color: #ffeb3b;
+  color: #000;
+  font-size: 12px;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+/* Styling for the sort buttons */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Table row styling */
+tbody tr:nth-child(even) {
+  background-color: #bbdefb;
+}
+
+/* Responsive table styling */
+@media screen and (max-width: 600px) {
+  table thead,
+  table tbody,
+  table th,
+  table td,
+  table tr {
+    display: block;
+  }
+
+  table thead tr {
+    display: none;
+  }
+
+  table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.college-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
